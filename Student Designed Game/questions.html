@@ -1,0 +1,277 @@
+<!DOCTPYE html>
+<head>
+  <title>
+    Ultimate Finance Quiz
+  </title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+  <link href="main.css" rel="stylesheet" type="text/css">
+</head>
+<body id="body" class="questionBack">
+  <audio id="oof" src="oof.mp3"></audio>
+  <audio id="ding" src="ding.mp3"></audio>
+  <audio id="slowOof" src="slowOof.mp3"></audio>
+  <audio id="caramelldansen" src="caramelldansen.mp3"></audio>
+  <audio id="clap" src="clap.mp3"></audio>
+
+  <div id="sectionOne" class="questions">
+    <h1>Section One - Gap Year + University</h1>
+    <h2 class="text">
+      You have just completed year 12 at school and decide to get a job in your gap year to save some money for university. You were not very wise as you spent all your previous savings on games (you have $0). You have found a job that pays $30000 per year.
+    </h2>
+    <section class="box">
+      <span class="number">1.</span>What is the weekly income you will receive correct to four decimal places?
+      <br><br>
+      $<input type="number" id="questionOne">
+    </section>
+    <section class="box">
+      <span class="number">2.</span>Write a recurrence relation that models the balance of your bank account from week to week. Using the recurrence relation, create a table in Excel with formulas that shows your account balance for 26 weeks. Use this table to find your balance after 4 weeks rounded to two decimal places.
+      <br><br>
+      $<input type="number" id="questionTwo">
+    </section>
+    <h2 class="text">
+      After 6 months (from the start of the year) your parents decide that it is time for you to find your own place to live. They have given you $5000 to help get you started. You rent an apartment near Melbourne for $300 per week, splitting the cost between you and your friend Martin.
+    </h2>
+    <section class="box">
+      <span class="number">3.</span>How much money do you now have (including upfront rent cost of one week in advance) rounded to the nearest dollar?
+      <br><br>
+      $<input type="number" id="questionThree">
+    </section>
+    <section class="box">
+      <span class="number">4.</span>Write a new recurrence relation that models the balance of your bank account after n weeks. Use the recurrence relation to find how much money you will have at the end of the year to the nearest dollar. (6 months has already passed so Vo=your answer from previous question AND only 26 weeks left in the year)
+      <br><br>
+      $<input type="number" id="questionFour">
+    </section>
+    <h2 class="text">
+      At the start of the next year, you find a computer science course that costs $12000 a year and takes two years to complete.
+    </h2>
+    <section class="box">
+      <span class="number">5.</span>Martin decides to move out, leaving you with the full $300 rent per week. On top of this, you do not have enough time to keep your current job and are forced to quit. Will you be able to pay the first year of the course without a loan? If so, how much money will you have left after paying?
+      <br><br>
+      $<input type="number" id="questionFive">
+    </section>
+    <h2 class="text">
+      To help with your financial situation, you decide to get a part-time job that pays $17000 per year.
+    </h2>
+    <section class="box">
+      <span class="number">6.</span>How much money will need to be borrowed to pay for university and rent during the second year?
+      <br><br>
+      $<input type="number" id="questionSix">
+    </section>
+    <h2 class="text">
+      You choose to pay off the loan the following year. You have changed from a part-time job to a full-time job as a computer technician. As a result, your salary has increased to $42000 per year. Use your answer from question 6 as the principal of the loan.
+    </h2>
+    <section class="box">
+      <span class="number">7.</span>If the bank charges 6.9% interest p.a. compounding monthly, how much money will need to be paid back to the bank in total to the nearest cent? Include the interest earned while making no payments in the first year. Use your finance solver to find the answer.
+      <br><br>
+      $<input type="number" id="questionSeven">
+    </section>
+    <section class="box">
+      <span class="number">8.</span>How much more interest is owed paying only in the second year compared to making monthly payments both years? Round all values to the nearest cent (including monthly payments).
+      <br><br>
+      $<input type="number" id="questionEight">
+    </section>
+    <button id="sectionOneButton" class="puzzleButton">
+      Check Answers
+    </button>
+  </div>
+
+  <div id="sectionTwo" class="questions invisible">
+    <h1>Section Two - Running a Business</h1>
+    <h2 class="text">
+      You have opened a computer store that uses the following recurrence relation to determine the cost of repair:
+      <br>
+      V<sub>0</sub> = $20, V<sub>n+1</sub> = $30 + V<sub>n</sub>
+    </h2>
+    <section class="box">
+      <span class="number">9.</span>What is the upfront repair fee?
+      <br><br>
+      $<input type="number" id="questionNine">
+    </section>
+    <section class="box">
+      <span class="number">10.</span>What is the cost of a three-hour repair? Create a table in Excel with formulas to show your working.
+      <br><br>
+      $<input type="number" id="questionTen">
+    </section>
+    <section class="box">
+      <span class="number">11.</span>Re-write the recurrence relation to show the cost after n hours. Use this to find the cost of a 16-hour repair.
+      <br><br>
+      $<input type="number" id="questionEleven">
+    </section>
+    <h2 class="text">
+      Your friend Martin has opened a competing store that charges $25 an hour with a $40 upfront repair fee.
+    </h2>
+    <section class="box">
+      <span class="number">12.</span>Write a recurrence relation for the cost of repair at Martin’s store after n hours. Use this to find the cost of an 8-hour repair.
+      <br><br>
+      $<input type="number" id="questionTwelve">
+    </section>
+    <section class="box">
+      <span class="number">13.</span>If a repair took 3.5 hours, how much money would you save at your store compared to Martin’s store rounded to the nearest cent? Use both recurrence relations to find your answer.
+      <br><br>
+      $<input type="number" id="questionThirteen">
+    </section>
+    <h2 class="text">
+      A third store run by Cadence has opened, with an upfront cost of $90 and each subsequent hour increasing the total cost by 10%.
+    </h2>
+    <section class="box">
+      <span class="number">14.</span>Write a geometric recurrence relation that shows the cost of repair lasting n hours. Use this relation to find the cost of a 10-hour repair rounded to the nearest cent.
+      <br><br>
+      $<input type="number" id="questionFourteen">
+    </section>
+    <section class="box">
+      <span class="number">15.</span>Create a table in excel that shows the cost of repair lasting all integer n values for n<=24 hours for all three stores. Use this table to find the least number of hours where the cost of repair is cheapest at Martin’s store, followed by Cadence’s, then yours. Round all values to the nearest cent.
+      <br><br>
+      <input type="number" id="questionFifteen"> hours
+    </section>
+    <button id="sectionTwoButton" class="puzzleButton">
+      Check Answers
+    </button>
+  </div>
+
+  <div id="sectionThree" class="questions invisible">
+    <h1>Section Three - Buying a new house</h1>
+    <h2 class="text">
+      You and your wife decide to downsize your home after your son left for university. You find a house at $420000 and your current balance between the two of you is $200000. You start by placing a 20% deposit on the home.
+    </h2>
+    <section class="box">
+      <span class="number">16.</span>What is the value of the deposit?
+      <br><br>
+      $<input type="number" id="questionSixteen">
+    </section>
+    <h2 class="text">
+      To pay the remaining cost of the house, you and your wife take out a home loan of $336000 at an interest rate of 2.4% p.a. compounding monthly.
+    </h2>
+    <section class="box">
+      <span class="number">17.</span>What is the principal of the loan?
+      <br><br>
+      $<input type="number" id="questionSeventeen">
+    </section>
+    <section class="box">
+      <span class="number">18.</span>If you plan to pay off the house before retirement at the age of 70 (20 years), how much will each monthly payment be rounded to the nearest cent? Use your finance solver to find the answer.
+      <br><br>
+      $<input type="number" id="questionEighteen">
+    </section>
+    <section class="box">
+      <span class="number">19.</span>If you can only afford monthly payments of $1500, how many years will it take to fully pay off the house using your finance solver. Round your answer to the nearest year.
+      <br><br>
+      <input type="number" id="questionNineteen"> years
+    </section>
+    <section class="box">
+      <span class="number">20.</span>Using the monthly payments of $1500, how many years will it take in total to pay off the loan if the interest rate changes from 2.4% p.a. to 1.6% p.a. after 7 years? Use your finance solver to find the solution to the <em>last whole year</em>. E.G., 12.8 = 12 years.
+      <br><br>
+      <input type="number" id="questionTwenty"> years
+    </section>
+    <section class="box">
+      <span class="number">21.</span>How many <em>full</em> months are paid in the last year?
+      <br><br>
+      <input type="number" id="questionTwentyOne"> months
+    </section>
+    <section class="box">
+      <span class="number">22.</span>How much is the payment in the last month to three significant figures? Use your finance solver to find the solution.
+      <br><br>
+      $<input type="number" id="questionTwentyTwo">
+    </section>
+    <button id="sectionThreeButton" class="puzzleButton">
+      Check Answers
+    </button>
+  </div>
+
+  <div id="sectionFour" class="questions invisible">
+    <h1>Section Four - Retirement</h1>
+    <h2 class="text">
+      You have prepared for retirement by setting up a perpetuity that gives you $500 a week with an annual interest rate of 5.72%.
+    </h2>
+    <section class="box">
+      <span class="number">23.</span>What is the weekly interest rate correct to two significant figures?
+      <br><br>
+      <input type="number" id="questionTwentyThree">%
+    </section>
+    <section class="box">
+      <span class="number">24.</span>How much money was invested to the nearest cent?
+      <br><br>
+      $<input type="number" id="questionTwentyFour">
+    </section>
+    <section class="box">
+      <span class="number">25.</span>Does the principal ever change (yes/no)? Write a recurrence relation for the balance of the perpetuity from week to week to justify your answer.<br><br>
+      <input type="text" id="questionTwentyFive">
+    </section>
+    <h2 class="text">
+      Your wife scolds you for creating a perpetuity rather than an annuity, arguing that the extra money still in the account will go to waste. You increase the weekly payments to $2000 while the interest rate stays at 5.72%.
+    </h2>
+    <section class="box">
+      <span class="number">26.</span>Write a recurrence relation modelling the decay of the annuity from week to week. Use this relation to find the balance of the annuity after 2 weeks to the nearest cent.<br><br>
+      $<input type="number" id="questionTwentySix">
+    </section>
+    <section class="box">
+      <span class="number">27.</span>Use your finance solver to determine how long this annuity will last to the nearest year.<br><br>
+      <input type="number" id="questionTwentySeven"> years
+    </section>
+    <h2 class="text">
+      As you reach the end of your life, you decide to go out and buy a Tesla to experience the power of electricity. Assume the value of the Tesla decreases at a flat rate 15% of the principal each year. The price of the Tesla is $69,420.
+    </h2>
+    <section class="box">
+      <span class="number">28.</span>Write a recurrence relation showing its value after n years. Use this relation to find the value of the Tesla after 4 years.
+      <br><br>
+      $<input type="number" id="questionTwentyEight">
+    </section>
+    <h2 class="text">
+      After further research you discover that the value of the Tesla depreciates 15% each year geometrically rather than linearly.
+    </h2>
+    <section class="box">
+      <span class="number">29.</span>Write a new recurrence relation showing the value of the Tesla after n years. Use the relation to find its value after 54 months to five significant figures.
+      <br><br>
+      $<input type="number" id="questionTwentyNine">
+    </section>
+    <section class="box">
+      <span class="number">30.</span>If you plan to sell the car at the end of the year before it drops below 50% in value, what is the value of n (years) when you sell it and what value will you sell it for to five significant figures?
+      <br><br>
+      $<input type="number" id="questionThirty">
+    </section>
+    <section class="box">
+      <span class="number">31.</span>What if the depreciation rate was 20% instead (also to five significant figures)?
+      <br><br>
+      $<input type="number" id="questionThirtyOne">
+    </section>
+    <h2 class="text">
+      You got a bit reckless and crashed your Tesla into a Rolls-Royce Phantom after failing to give way. You are charged with the full $950000 cost of a new car. To do this, you take out a bank loan for the full cost at 8.2% p.a. compounding monthly.
+    </h2>
+    <section class="box">
+      <span class="number">32.</span>Use your finance solver to find the number of months it will take to pay off the loan at $9500 per month to the last whole month.<br><br>
+      <input type="number" id="questionThirtyTwo"> months
+    </section>
+    <section class="box">
+      <span class="number">33.</span>Use your finance solver to find the value of 169th payment to the nearest cent. Don’t forget the interest earned on the last payment.
+      <br><br>
+      $<input type="number" id="questionThirtyThree">
+    </section>
+    <section class="box">
+      <span class="number">34.</span>How much interest was paid in total as a percentage of the total rounded to two decimal places?
+      <br><br>
+      <input type="number" id="questionThirtyFour">%
+    </section>
+    <button id="sectionFourButton" class="puzzleButton">
+      Check Answers
+    </button>
+  </div>
+
+  <div id="gameOver" class="invisible">
+    <h1>Game Over</h1>
+    <button id="retry">
+      Menu
+    </button>
+  </div>
+  <div id="finish" class="puzzleBack transparent invisible">
+    <h2>Woah, someone beat the quiz!</h2>
+    <h2>Congratulations!</h2>
+    <p>Reward:</p>
+    <button id="thisButton" class="puzzleButton">
+      This Button
+    </button>
+  </div>
+  <nav id="lives">
+    <img id="lifeOne" src="heart.png">
+    <img id="lifeTwo" src="heart.png">
+    <img id="lifeThree" src="heart.png">
+  </nav>
+  <script src="questions.js"></script>
+</body>
